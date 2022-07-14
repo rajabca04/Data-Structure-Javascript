@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array traversing and accessing.</title>
+    <style>
+        button{
+            color: blue;
+            background-color: aqua;
+        }
+        input{
+            color: brown;
+            font-weight: bolder;
+        }
+     
+
+
+    </style>
+
+    <script>
+      console.log("hello world! 👋🏻");
+
+      let data = [4, 64, 3, 6, 2, 6, 7, 4, 97, 44, 24, 63, 15, 74, 14, 105];
+
+      // for(i=0;i<data.length;i++){
+      //     console.log("Array " + [i] + " ---->  " + data[i]);
+      // }
+
+      // console.log(data[3]);
+
+      // Function for accessing element form data[] array.
+
+      function getelement() {
+        let el = document.getElementById("element").value;
+
+        if (el < data.length && el >= 0 && typeof parseInt(el) === "number") {
+          alert(data[el]);
+        } else {
+          alert("Enter a valid input..");
+        }
+      }
+
+
+    </script>
+  </head>
+  <body>
+
+    <input type="text" id="element" />
+    <button onclick="getelement()" >Get Element</button>
+
+  </body>
+</html>
